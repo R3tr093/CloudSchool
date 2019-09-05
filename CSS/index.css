@@ -1,0 +1,188 @@
+body
+{
+    height: 100vh;  
+    overflow: hidden;
+}
+
+#title
+{
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    position: relative;
+    top: 10%;
+    text-shadow: 2px 2px 4px lightgray;
+}
+
+#register
+{
+    
+    width: 30%;
+    margin: auto;
+    position: relative;
+    top: 20%;
+   
+}
+.r2
+{
+    width: 200px;
+    margin: auto;
+}
+
+#logIn
+{
+    
+    width: 30%;
+    margin: auto;
+    position: relative;
+    top: 25%;
+    display: none;
+}
+
+#info
+{
+    
+    width: 50%;
+    margin: auto;
+    position: relative;
+    top: 5%;
+    display: none;
+   
+}
+
+.infoTxt
+{
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px lightgray;
+}
+
+.h2Info
+{
+    text-align: center;
+}
+
+#question
+{
+    min-height: 60px;
+    min-width: 60px;
+    border-radius: 50%;
+    border: none;
+    background: url('../IMG/question.png') no-repeat center;
+    background-size: cover;
+    position: absolute;
+    left: 85%;
+    top: 10%;
+}
+
+#question:hover
+{
+    animation-name: scaleEffect;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+#git
+{
+    position: absolute;
+    left: 85%;
+    height: 60px;
+    top: 93%;
+}
+
+/* ANIMATION CSS */
+
+/* The animation code */
+@keyframes rocketMove {
+    0%   {left:5%; top:90%;}
+    10%   {left:9%; top:70%;}
+    20%   {left:3%; top:55%;}
+    30%   {left:7%; top:30%;}
+    40%   {left:9%; top:10%;}
+    50%   {left:5%; top:0%;}
+    60%   {left:2%; top:-900px;}
+    70%   {left:6%; top:-900px;}
+    80%   {left:10%; top:-900px;}
+    90%   {left:8%; top:-900px;}
+    100%   {left:4%; top:-900px;}
+
+
+    
+    
+
+
+  }
+
+  @keyframes scaleEffect {
+    0%    {transform: scale(1);}
+    10%    {transform: scale(1.05);}
+    20%    {transform: scale(1.1);}
+    30%    {transform: scale(1.13);}
+    40%    {transform: scale(1.16);}
+    50%    {transform: scale(1.19);}
+    60%    {transform: scale(1.21);}
+    70%    {transform: scale(1.23);}
+    80%    {transform: scale(1.26);}
+    90%    {transform: scale(1.29);}
+    100%    {transform: scale(1.31);}
+
+
+
+    
+    
+
+
+  }
+  
+  /* The element to apply the animation to */
+  #rocket{
+    height: 200px;
+    position: absolute;
+    left: 5%;
+    top: 10%;
+    animation-name: rocketMove;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+  } 
+
+
+@media (max-width: 576px) { 
+
+
+    #rocket{
+        height: 80px;
+        position: absolute;
+        left: 1%;
+        top: 10%;
+        animation-name: rocketMove;
+        animation-duration: 12s;
+        animation-iteration-count: 1;
+      } 
+
+    body{
+        overflow-y: auto;
+    }
+
+    #git
+    {
+        position: fixed;
+        left: 85%;
+        height: 60px;
+        top: 93%;
+    }
+
+ }
+
+.logo{
+     
+    position: relative;
+    left: 30px;
+    margin:-70px 0 0 -60px;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+

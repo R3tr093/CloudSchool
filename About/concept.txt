@@ -1,0 +1,11 @@
+
+
+L'idée original est de fournir un site web / application qui permet de réaliser des exercices de mathématique, de mémoire, de logique, etc...
+
+Chaque mini-jeu sera en single page App avec React.
+
+On mémorisera les données sur l'utilisateur dans un premier temps avec les sessions.
+
+Pour chaque jeu on verra les meilleurs scores.
+
+On créera des résultats et affichera le meilleur de l'utilisateur pour chaque jeu.
