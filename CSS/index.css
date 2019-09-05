@@ -2,6 +2,8 @@ body
 {
     height: 100vh;  
     overflow: hidden;
+    margin: 0px;
+    padding: 0px;
 }
 
 #title
@@ -70,9 +72,9 @@ body
     border: none;
     background: url('../IMG/question.png') no-repeat center;
     background-size: cover;
-    position: absolute;
-    left: 85%;
-    top: 10%;
+    position: fixed;
+    left: 89%;
+    top: 5%;
 }
 
 #question:hover
@@ -84,8 +86,8 @@ body
 
 #git
 {
-    position: absolute;
-    left: 85%;
+    position: fixed;
+    left: 88%;
     height: 60px;
     top: 93%;
 }
@@ -113,7 +115,27 @@ body
 
   }
 
-  @keyframes scaleEffect {
+  @keyframes rocketMove2 {
+    0%   {left:5%; top:90%;}
+    10%   {left:9%; top:70%;}
+    20%   {left:3%; top:55%;}
+    30%   {left:7%; top:30%;}
+    40%   {left:9%; top:10%;}
+    50%   {left:5%; top:0%;}
+    60%   {left:2%; top:-1400px;}
+    70%   {left:6%; top:-1400px;}
+    80%   {left:10%; top:-1400px;}
+    90%   {left:8%; top:-1400px;}
+    100%   {left:4%; top:-1400px;}
+
+
+    
+    
+
+
+  }
+
+@keyframes scaleEffect {
     0%    {transform: scale(1);}
     10%    {transform: scale(1.05);}
     20%    {transform: scale(1.1);}
@@ -125,13 +147,6 @@ body
     80%    {transform: scale(1.26);}
     90%    {transform: scale(1.29);}
     100%    {transform: scale(1.31);}
-
-
-
-    
-    
-
-
   }
   
   /* The element to apply the animation to */
@@ -154,9 +169,9 @@ body
         position: absolute;
         left: 1%;
         top: 10%;
-        animation-name: rocketMove;
+        animation-name: rocketMove2;
         animation-duration: 12s;
-        animation-iteration-count: 1;
+        animation-iteration-count: infinite;
       } 
 
     body{
@@ -169,6 +184,19 @@ body
         left: 85%;
         height: 60px;
         top: 93%;
+    }
+
+    #question
+    {
+        min-height: 60px;
+        min-width: 60px;
+        border-radius: 50%;
+        border: none;
+        background: url('../IMG/question.png') no-repeat center;
+        background-size: cover;
+        position: fixed;
+        left: 89%;
+        top: 2%;
     }
 
  }
